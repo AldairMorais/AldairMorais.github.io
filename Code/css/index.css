@@ -1,0 +1,317 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: #000;
+}
+
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background: #fff;
+  padding: 5px 1px !important;
+  transition: 2s;
+}
+
+
+body::-webkit-scrollbar-thumb {
+    padding: 5px 1px !important;
+    width: 0px !important;
+    background: #ccc !important;
+    border-right: 1px solid transparent !important;
+    border-left: 1px solid transparent !important;
+    transition: 2s !important;
+    border-top: 5px solid transparent !important;
+    border-bottom: 5px solid transparent !important;
+}
+
+
+.active {
+  display: block !important;
+  position: absolute;
+  top: 20%;
+  width: 100vh;
+  padding-left: 8px;
+  height: 100vh;
+  line-height: 3;
+  background: #000;
+  left: 0;
+}
+.heroText {
+    line-height: 1;
+    width: 50%;
+  }
+
+  @media (min-width: 350px) {
+    .longTextService {
+      height: 1.011em !important;
+    }
+  }
+
+  
+.dezoito{
+  font-size: 10em;
+  line-height: 1.2;
+}
+
+.spacell{
+  letter-spacing: 5px;
+}
+
+div#um img{
+  display: none;
+  }
+  .flow-wave {
+    padding: 10px 0;
+  }
+  
+
+div#um:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+
+
+
+div#dois img{
+  display: none;
+  }
+div#dois:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+
+div#tres img{
+  display: none;
+  }
+div#tres:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#quatro img{
+  display: none;
+  }
+div#quatro:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#cinco img{
+  display: none;
+  }
+div#cinco:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#seis img{
+  display: none;
+  }
+div#seis:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#sete img{
+  display: none;
+  }
+div#sete:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#oito img{
+  display: none;
+  }
+div#oito:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#nove img{
+  display: none;
+  }
+div#nove:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#dez img{
+  display: none;
+  }
+div#dez:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#onze img{
+  display: none;
+  }
+div#onze:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#doze img{
+  display: none;
+  }
+div#doze:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#treze img{
+  display: none;
+  }
+div#treze:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#catorze img{
+  display: none;
+  }
+div#catorze:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+
+
+div#quinze img{
+  display: none;
+  }
+div#quinze:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+
+div#dezasseis img{
+  display: none;
+  }
+div#dezasseis:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#dezassete img{
+  display: none;
+  }
+div#dezassete:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+div#dezoito img{
+  display: none;
+  }
+div#dezoito:hover img{
+display: block;
+background: radial-gradient(circle at 10px -7px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x,
+radial-gradient(circle at 10px 27px, transparent 8px, currentColor 8px, currentColor 9px, transparent 9px) repeat-x;
+background-size: 20px 20px;
+background-position: -10px calc(100% + 16px), 0 calc(100% - 4px);
+animation: waveFlow 1s infinite linear;
+}
+
+@keyframes waveFlow {
+  from { background-position-x: -10px, 0; }
+  to { background-position-x: -30px, -20px; }
+}
+
+#prov{
+  background: linear-gradient(to top, #260101, black);
+}
+#presidentes{
+  background: linear-gradient(to top, #4e0404, #260101);
+}
+
+.pb{
+  filter:grayscale(1);
+  object-fit: cover;
+}
+
+
+.secPhotoOp{
+  background: url('../assets/Preto-e-Branco\ 4.png');
+  height: 100vh;
+  filter: brightness(0.2) opacity(0.99);
+  background-size: cover;
+}
+
+
+.swiper-container {
+  width: 100%;
+  height: 80vh;
+}
+
+#war{
+  object-fit: cover;
+}
+
+footer{
+  background: #111;
+}
