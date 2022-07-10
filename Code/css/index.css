@@ -332,10 +332,6 @@ font-size: 4rem;
 }
 }
 @media(max-width: 800px){
-.container{
-padding: 0 1rem;
-}
-
 #bbv{
 font-size: 2rem;
 }
