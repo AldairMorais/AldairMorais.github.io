@@ -11,7 +11,46 @@
     <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+<style>
+    	
 
+              #bbv {
+              	font-weight: 200;
+              	margin: 0.4rem;
+              }
+
+              #bbv{
+              	font-size: 3rem;
+              }
+
+@media(min-width: 1200px){
+	#bbv{
+		font-size: 4rem;
+	}
+}
+@media(max-width: 800px){
+.container{
+	padding: 0 1rem;
+}
+
+	#bbv{
+		font-size: 2rem;
+	}
+}
+
+ @media(max-width: 400px){
+ 	#bbv, .bv{
+ 		font-size: 2rem;
+ 	}
+
+
+ }
+
+
+.txt-type > .txt {
+	border-right: 0.2rem solid  #777;
+}
+</style>
 </head>
 <body class="bg-black">
     <header class="flex px-2 sm:px-5 items-center py-10 justify-between  container mx-auto">
@@ -80,39 +119,42 @@ A economia é baseada na extração de recursos minerais, como o petróleo e o g
 
 <section id="hist"  class="pb-20 ">
 <img src="assets/war.png" id="war" class="h-96" alt="">
-<div class="bg-red-900 w-full h-screen">
+<div class="bg-red-900 w-full h-screen flex justify-center items-center flex-col">
+    <div class="container h-96">
+        <h2 class="text-6xl bv md:text-5xl font-bold text-white">Um país independente.</h2>
+        
+        <h1 id="bbv" class="text-white w-3/6 h-full">
+         11 de Novembro, <span class="txt-type" data-wait="3000" data-words='[" data que Angola comemora a sua Independência."]'></span>
+        </h1>
+    </div>
 
-    <div class="reveal">
+    <!-- <div class="reveal">
 
-        <!-- Any section element inside of this container is displayed as a slide -->
+
         <div class="slides">
     
 
 
             <section>
+                
+                
                 <section id="fragments">
-                    <h2 class="text-7xl md:text-5xl font-bold text-white">Um país independente.</h2>
+                 
                     <p class=" text-white text-xl">Clique na seta abaixo, para começar...</p>
             
                 </section>
                 <section>
                     <h2 class="text-7xl md:text-5xl text-white font-bold">11 de Novembro</h2>
-                    <!-- <p class="fragment grow">grow</p> -->
-                    <!-- <p class="fragment shrink">shrink</p> -->
+             
                     <p class="fragment fade-in text-7xl md:text-5xl text-white">É a data</p>
                     <p class="fragment fade-in text-7xl md:text-5xl text-white">que <span class="font-bold">Angola</span> comemora</p>
                     <p class="fragment fade-in text-7xl md:text-5xl text-white">a sua Independência.</p>
          </section>
             </section>
 
-    
-    
-
-
-
         </div>
 
-    </div>
+    </div> -->
 
 </div>
         </section>
@@ -348,18 +390,18 @@ A economia é baseada na extração de recursos minerais, como o petróleo e o g
         <p class="text-center mt-10 text-white text-opacity-25">Aldair Cláudio Morais António ©</p>
     </footer>
     <script src="js/all.js"></script>
-    <script src="js/reveal.js"></script>
+    <!-- <script src="js/reveal.js"></script> -->
     <script src="js/script.js"></script>
     <script>
 
         // More info https://github.com/hakimel/reveal.js#configuration
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            center: true,
-            hash: true,
-            transition: 'slide', // none/fade/slide/convex/concave/zoom
-        });
+        // Reveal.initialize({
+        //     controls: true,
+        //     progress: true,
+        //     center: true,
+        //     hash: true,
+        //     transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // });
 
     </script>
 
@@ -387,6 +429,61 @@ A economia é baseada na extração de recursos minerais, como o petróleo e o g
   });
 </script>
 
+<script>
+    
+const TypeWriter = function (txtElement, words, wait = 3000) {
+	this.txtElement = txtElement;
+	this.words = words;
+	this.txt = '';
+	this.wordIndex = 0;
+	this.wait = parseInt(wait, 10);
+	this.type();
+	this.isDeleting = false;
+	}
+
+TypeWriter.prototype.type = function() {
+const current = this.wordIndex % this.words.length;
+const fullTxt = this.words[current];
+
+if (this.isDeleting) {
+this.txt = fullTxt.substring(0, this.txt.length - 1);
+} else {
+	this.txt = fullTxt.substring(0, this.txt.length + 1);
+}
+
+this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+let typeSpeed = 100;
+
+if (this.isDeleting) {
+	typeSpeed /= 2;
+}
+
+if (!this.isDeleting && this.txt === fullTxt) {
+	typeSpeed = this.wait;
+this.isDeleting = true;
+
+}else if(this.isDeleting && this.txt === '') {
+	this.isDeleting = false;
+	this.wordIndex++;
+	typeSpeed = 500;
+}
+
+setTimeout(() => this.type(), typeSpeed);
+};
+
+document.addEventListener('DOMContentLoaded', init);
+
+function  init() {
+	const txtElement = document.querySelector('.txt-type');
+	const words = JSON.parse(txtElement.getAttribute('data-words'));
+	const wait = txtElement.getAttribute('data-wait');
+
+	new TypeWriter(txtElement, words, wait);
+}
+
+
+</script>
 
 </body>
 </html>

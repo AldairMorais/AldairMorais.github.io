@@ -10,3 +10,6 @@ toggle.onclick = function () {
 rmvMn.onclick = function () {
     menuUp.style.display = 'none';
 }
+
+
+

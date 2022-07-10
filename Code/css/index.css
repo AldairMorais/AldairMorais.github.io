@@ -315,3 +315,41 @@ animation: waveFlow 1s infinite linear;
 footer{
   background: #111;
 }
+
+
+#bbv {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+#bbv{
+  font-size: 3rem;
+}
+
+@media(min-width: 1200px){
+#bbv{
+font-size: 4rem;
+}
+}
+@media(max-width: 800px){
+.container{
+padding: 0 1rem;
+}
+
+#bbv{
+font-size: 2rem;
+}
+}
+
+@media(max-width: 400px){
+#bbv, .bv{
+font-size: 2rem;
+}
+
+
+}
+
+
+.txt-type > .txt {
+border-right: 0.2rem solid  #777;
+}
