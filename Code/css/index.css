@@ -353,3 +353,11 @@ font-size: 2rem;
 .txt-type > .txt {
 border-right: 0.2rem solid  #777;
 }
+
+.starss{
+  font-size: 34em;
+    position: absolute;
+    color: #661c1c;
+    right: 0;
+    margin-right: -308px;
+}
